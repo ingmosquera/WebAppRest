@@ -23,7 +23,7 @@ namespace WebAppRest.Controllers
             string autenticado = Thread.CurrentPrincipal.Identity.Name;
             try
             {
-                if (autenticado == "users" || autenticado == "admin")
+                if (autenticado == "user" || autenticado == "admin")
                 {
                     var data = obj.DatosclienteXId(id);
                     if (data.Count == 0)
